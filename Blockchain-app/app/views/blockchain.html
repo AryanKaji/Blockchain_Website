@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 col-sm-4 col-12 mb-4">
+      <ul class="list-group">
+        <li
+          ng-repeat="block in blockchain"
+          class="list-group-item"
+          ng-click="selectBlock($index)"
+          ng-class="{active: $index === currentIndex}"
+        >
+          Block {{ block.index }}
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-md-9 col-sm-8 col-12">
+      <h3>Block Details</h3>
+      <p><strong>Index:</strong> {{ currentBlock.index }}</p>
+      <p><strong>Previous Hash:</strong> {{ currentBlock.previousHash }}</p>
+      <p><strong>Nonce:</strong> {{ currentBlock.nonce }}</p>
+      <p><strong>Timestamp:</strong> {{ currentBlock.timestamp }}</p>
+      <p><strong>Transactions:</strong></p>
+      <ul class="list-group mb-3">
+        <li class="list-group-item" ng-repeat="tx in currentBlock.transactions">
+          {{ tx }}
+        </li>
+      </ul>
+      <p><strong>Hash:</strong> {{ currentBlock.hash }}</p>
+
+      <!-- Responsive button spacing -->
+      <div
+        class="d-flex flex-column flex-sm-row gap-2 justify-content-start mt-3"
+      >
+        <button class="btn btn-primary" ng-click="previousBlock()">
+          Previous
+        </button>
+        <button class="btn btn-primary" ng-click="nextBlock()">Next</button>
+      </div>
+    </div>
+  </div>
+</div>

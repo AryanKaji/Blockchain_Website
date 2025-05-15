@@ -1,0 +1,29 @@
+body {
+  padding-top: 20px;
+}
+
+.list-group-item.active {
+  background-color: #337ab7;
+  color: white;
+  border-color: #337ab7;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .btn-group-justified {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn-group-justified .btn-group {
+    width: 100%;
+  }
+
+  .btn-group .btn {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
