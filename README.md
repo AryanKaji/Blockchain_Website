@@ -1,2 +1,2 @@
-# Blockchain_Website
-This website is developed solely for educational purposes to help users understand the basic concepts of blockchain technology.
+## `Blockchain Visualizer`
+A web-based simulation of how a blockchain works, built using `HTML`, `AngularJS`, `Bootstrap`, and `CryptoJS`. This project allows users to understand blockchain concepts like blocks, transactions, hashes, and chain linkage through a responsive and interactive interface.
