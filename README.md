@@ -51,7 +51,7 @@ blockchain-app/
 │   │   ├── angular.min.js
 │   │   ├── angular-route.min.js
 │   │   └── bootstrap.bundle.min.js
-│   └── README.MD
+README.MD
 ```
 
 ---
@@ -71,13 +71,13 @@ blockchain-app/
 ---
 
 ## `Screenshots`
-
+```
 ![Introduction](Blockchain-app/assets/img/introduction.png)
 ![Blockchain](Blockchain-app/assets/img/blockchain.png)
 ![Add-Block](Blockchain-app/assets/img/add-block.png)
 ![About](Blockchain-app/assets/img/about.png)
 ![Contact](Blockchain-app/assets/img/contact.png)
-
+```
 ---
 
 ## `Screenshot Output`
